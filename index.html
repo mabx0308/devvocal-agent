@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevVocal - Real-Time Voice-Driven AI Workspace Agent</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: rgba(255, 255, 255, 0.04);
+      --border: rgba(255, 255, 255, 0.08);
+      --primary: #38bdf8;
+      --primary-glow: rgba(56, 189, 248, 0.15);
+      --accent: #818cf8;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 860px;
+      width: 100%;
+    }
+    header {
+      text-align: center;
+      margin-top: 3rem;
+      margin-bottom: 2.5rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 0.85rem;
+      background: var(--primary-glow);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: var(--primary);
+      border-radius: 9999px;
+      font-size: 0.825rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      letter-spacing: 0.025em;
+    }
+    h1 {
+      font-size: 2.75rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      background: linear-gradient(135deg, #ffffff 40%, var(--primary) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+    p.subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 680px;
+      margin: 0 auto 1.5rem auto;
+    }
+    .cta-row {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.4rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #04101e;
+    }
+    .btn-primary:hover {
+      background: #7dd3fc;
+      transform: translateY(-2px);
+    }
+    .btn-secondary {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.08);
+      transform: translateY(-2px);
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin: 3rem 0;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      backdrop-filter: blur(8px);
+    }
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .terminal-section {
+      background: #040711;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .terminal-header {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    pre {
+      font-family: 'Fira Code', monospace;
+      color: #34d399;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 1rem;
+      border-radius: 8px;
+      overflow-x: auto;
+      font-size: 0.875rem;
+    }
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      margin-top: auto;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">Best Use of Speechmatics Bonus Award Track</div>
+      <h1>DevVocal</h1>
+      <p class="subtitle">
+        Real-time voice-driven AI workspace assistant designed to make developer workflows completely hands-free using low-latency transcription and LLM reasoning.
+      </p>
+      <div class="cta-row">
+        <a href="https://github.com/MuhammadAbubakar9/devvocal-agent" target="_blank" class="btn btn-primary">
+          View on GitHub
+        </a>
+      </div>
+    </header>
+
+    <div class="features-grid">
+      <div class="card">
+        <h3>⚡ Real-Time Streaming</h3>
+        <p>Captures live microphone audio using SoundDevice and streams to Speechmatics WebSocket API with sub-second latency.</p>
+      </div>
+      <div class="card">
+        <h3>🧠 Autonomous Execution</h3>
+        <p>Interprets natural language commands using Gemini AI to run system processes, scripts, and manage files hands-free.</p>
+      </div>
+      <div class="card">
+        <h3>🔊 Spoken Feedback</h3>
+        <p>Integrates Pyttsx3 text-to-speech to provide clear verbal confirmations and execution statuses back to the developer.</p>
+      </div>
+    </div>
+
+    <div class="terminal-section">
+      <div class="terminal-header">Quick Local Setup</div>
+      <pre><code># 1. Clone repository
+git clone https://github.com/MuhammadAbubakar9/devvocal-agent.git
+cd devvocal-agent
+
+# 2. Set up virtual environment
+python -m venv venv
+venv\Scripts\activate
+
+# 3. Launch Agent
+python agent.py</code></pre>
+    </div>
+
+    <footer>
+      DevVocal • Built with Python, Speechmatics Real-Time API, and Google GenAI SDK
+    </footer>
+  </div>
+</body>
+</html>
