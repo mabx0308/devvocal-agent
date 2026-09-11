@@ -5,6 +5,10 @@
 
 ---
 
+## 📺 Video Demo
+[Watch DevVocal in Action](https://drive.google.com/file/d/117NGzgoFysc0kKWUDSGVg6vfUSau0dU0/view?usp=sharing)
+
+
 ## 🎯 Overview
 Developers spend countless hours switching windows, typing repetitive CLI commands, and manually managing environments. **DevVocal** is an autonomous, hands-free desktop voice assistant built to turn real-time natural language into instant system execution.
 
